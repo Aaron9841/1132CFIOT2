@@ -16,5 +16,14 @@ Second, you need install some software to edit program:
 - https://code.visualstudio.com/download
 - XAMPP, which have local server and database, we use it for contain our's data.
 - https://www.apachefriends.org/download.html
+> [!CAUTION]
+> XAMPP will suggest you install in dask C, just follow the instruction.
 ### Hardware wiring diagram
-By the code in Arduino, the pin have been setted.
+By the code in Arduino, the pin have been setted.  
+![image](pic/hardware.drawio.png)  
+### Software setting
+We start from Arduino IDE:
+- Add ESP32 board
+![image](https://github.com/iiotntust/1132CFIOT/blob/9df78bd0296d513af6e96ff781f7df2f19e42dce/pic/pic1.jpg)  
+- Add library  
+![image](pic/DHT_library.png)  
