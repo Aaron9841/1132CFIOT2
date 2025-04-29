@@ -86,6 +86,7 @@ If you install successfully, open the XAMPP control panel, you should see this:
 ![image](pic/XAMPP_14.png)  
 - You also can see the data from here:  
 ![image](pic/XAMPP_15.png)  
-- OK, we finally finish database construct.
-- Next is Arduino's program.
+OK, we finally finish database construct.  
+Next is Coding
+#### Coding
 
