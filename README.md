@@ -57,3 +57,35 @@ If you install successfully, open the XAMPP control panel, you should see this:
 > This issue is caused by insufficient permissions in XAMPP. Open Windows File Explorer and navigate to the file "C:\xampp\xampp-control.ini".
 > Right-click the file and select Properties from the context menu.  
 > ![image](pic/XAMPP_error_2.png)  
+
+- Second, being able to access the database control panel directly during testing is very risky, as anyone using your computer can freely access the database.
+- Therefore, we have to change the authentication method for accessing the database.
+- Click Apche's config, you can open config file by VS code.
+![image](pic/XAMPP_error_2.png)  
+- auth_type refers to the authentication method. The default is config, but we need to change it to cookie.
+- The difference is that config stores the username and password in config.inc.php and logs in automatically, while cookie uses database authentication for login, which is more secure.  
+![image](pic/XAMPP_9.png)  
+> [!CAUTION]
+> After making the change, remember to save the file. Once saved, return to the XAMPP control panel and restart both Apache and MySQL.
+> By rebooting, you should be able to access the MySQL control panel securely.  
+> ![image](pic/XAMPP_10.png)  
+> After re-entering the MySQL control panel, a login window should appear.
+> The default username is root, and the password is blank.
+
+- Here is how to add an account:  
+![image](pic/XAMPP_11.png)  
+- Don't forget password.
+- Third, let’s create a database.  
+> [!WARNING]
+> DO NOT USE UPPERCASE, the database would error.  
+
+![image](pic/XAMPP_12.png)  
+- Create the table, all the data will put in here and separate by name.  
+![image](pic/XAMPP_13.png)  
+- Here we can insert the data to test batabase are woring or not.
+![image](pic/XAMPP_14.png)  
+- You also can see the data from here:  
+![image](pic/XAMPP_15.png)  
+- OK, we finally finish database construct.
+- Next is Arduino's program.
+
