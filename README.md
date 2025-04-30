@@ -110,3 +110,4 @@ Next is Coding
 > Open your computer's CMD
 > Type the ipconfig command
 > ![image](pic/XAMPP_20.png)  
+## Check your result
