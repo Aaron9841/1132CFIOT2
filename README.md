@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0d1e6435-4959-499f-b13c-28bf42da26ee)# 1132CFIOT2
+# 1132CFIOT2
 - This implementation requires the server and database functions provided by XAMPP, combined with the temperature and humidity data read by the ESP32 used in CFIOT1, which will be transmitted back to the database.
 ## Hardware
 First, you need those hardware to construct the environment.
