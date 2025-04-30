@@ -111,3 +111,4 @@ Next is Coding
 > Type the ipconfig command
 > ![image](pic/XAMPP_20.png)  
 ## Check your result
+- At Arduino, when you plug in your ESP32, if you see this, that means your server not running.
