@@ -1,4 +1,4 @@
-# 1132CFIOT2
+![image](https://github.com/user-attachments/assets/0d1e6435-4959-499f-b13c-28bf42da26ee)# 1132CFIOT2
 - This implementation requires the server and database functions provided by XAMPP, combined with the temperature and humidity data read by the ESP32 used in CFIOT1, which will be transmitted back to the database.
 ## Hardware
 First, you need those hardware to construct the environment.
@@ -28,6 +28,8 @@ We start from Arduino IDE:
 ![image](https://github.com/iiotntust/1132CFIOT/blob/9df78bd0296d513af6e96ff781f7df2f19e42dce/pic/pic1.jpg)  
 - Add library  
 ![image](pic/DHT_library.png)  
+- Select device  
+![image](pic/XAMPP_21.png)  
 #### XAMPP
 And then we start to deal with XAMPP:
 > [!WARNING]
@@ -73,13 +75,13 @@ If you install successfully, open the XAMPP control panel, you should see this:
 > The default username is root, and the password is blank.
 
 - Here is how to add an account:  
-![image](pic/XAMPP_11.png)  
+![image](pic/XAMPP_12.png)  
 - Don't forget password.
 - Third, let’s create a database.  
 > [!WARNING]
 > DO NOT USE UPPERCASE, the database would error.  
 
-![image](pic/XAMPP_12.png)  
+![image](pic/XAMPP_11.png)  
 - Create the table, all the data will put in here and separate by name.  
 ![image](pic/XAMPP_13.png)  
 - Here we can insert the data to test batabase are woring or not.
@@ -111,4 +113,12 @@ Next is Coding
 > Type the ipconfig command
 > ![image](pic/XAMPP_20.png)  
 ## Check your result
-- At Arduino, when you plug in your ESP32, if you see this, that means your server not running.
+- If your setting are right, you can see this from Arduino serial monitor  
+![image](pic/XAMPP_22.png)  
+- Next we can use URL to open view.php and it will call database  
+![image](pic/XAMPP_23.png)  
+## Problem
+- At Arduino, when you plug in your ESP32, if you see this, that means your server not running.  
+![image](pic/XAMPP_error_3.png)  
+- Even you start server, you still can see the error, this means that when you created the account, you didn't assign global permission to it, so it cannot upload data using that account.  
+![image](pic/XAMPP_error_4.png)  
