@@ -1,0 +1,45 @@
+#include <WiFi.h>
+#include <HTTPClient.h>
+#include "DHT.h"
+
+#define DHTPIN 14
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+
+const char* ssid = "Classroom";
+const char* password = "ntustclassroom";
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.begin(ssid, password);
+  dht.begin();
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting...");
+  }
+  Serial.println("Connected.");
+}
+
+void loop() {
+  float temp = dht.readTemperature();
+  float hum = dht.readHumidity();
+
+  if (!isnan(temp) && !isnan(hum)) {
+    HTTPClient http;
+    String url = "http://XXXXXXXXXXXXXX/XXXXX/XXXXXXXXXX.php?temp=" + String(temp) + "&hum=" + String(hum);
+    http.begin(url);
+    int httpCode = http.GET();
+    String payload = http.getString();
+    Serial.println(httpCode);
+    Serial.println(payload);
+    http.end();
+
+  }
+  Serial.print(F("Humidity: "));
+  Serial.print(hum);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(temp);
+  Serial.println(F("°C "));
+  delay(5000); // 每5秒傳一次
+}

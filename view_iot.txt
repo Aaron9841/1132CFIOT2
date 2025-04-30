@@ -1,0 +1,38 @@
+<?php
+$servername = "localhost";
+$username = "";
+$password = ""; 
+$dbname = ""; 
+
+// onstruct database connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// check cinnection
+if ($conn->connect_error) {
+  die("connect_error: " . $conn->connect_error);
+}
+
+// Asking 20 data
+$sql = "SELECT * FROM dht_data ORDER BY timestamp DESC LIMIT 20";
+$result = $conn->query($sql);
+
+// Show data
+echo "<h2>ESP32- DHT11 data</h2>";
+echo "<table border='1' cellpadding='5'><tr><th>ID</th><th>temperature</th><th>humidity</th><th>timestamp</th></tr>";
+
+if ($result->num_rows > 0) {
+  while($row = $result->fetch_assoc()) {
+    echo "<tr>
+            <td>" . $row["id"]. "</td>
+            <td>" . $row["temperature"]. " °C</td>
+            <td>" . $row["humidity"]. " %</td>
+            <td>" . $row["timestamp"]. "</td>
+          </tr>";
+  }
+} else {
+  echo "<tr><td colspan='5'>no data</td></tr>";
+}
+echo "</table>";
+
+$conn->close();
+?>
