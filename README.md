@@ -89,4 +89,11 @@ If you install successfully, open the XAMPP control panel, you should see this:
 OK, we finally finish database construct.  
 Next is Coding
 #### Coding
-
+- We using Websocket to upload data, that means we can add data to database by specific web address.
+- At XAMPP side, we have two program, one is when ESP32 transmit data, there are a program to help insert data.
+> [!CAUTION]
+> We first need to create a folder under XAMPP’s htdocs directory to store our two program files.
+> In VS code, add a folder and two php file
+> Remember to include the .php extension when creating the two files, otherwise VS Code will not recognize the file type.
+- Another is we can use specical web address to check our database.
+- 
