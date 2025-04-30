@@ -63,7 +63,7 @@ If you install successfully, open the XAMPP control panel, you should see this:
 - Second, being able to access the database control panel directly during testing is very risky, as anyone using your computer can freely access the database.
 - Therefore, we have to change the authentication method for accessing the database.
 - Click Apche's config, you can open config file by VS code.
-![image](pic/XAMPP_error_2.png)  
+![image](pic/XAMPP_8.png)  
 - auth_type refers to the authentication method. The default is config, but we need to change it to cookie.
 - The difference is that config stores the username and password in config.inc.php and logs in automatically, while cookie uses database authentication for login, which is more secure.  
 ![image](pic/XAMPP_9.png)  
