@@ -106,7 +106,7 @@ Next is Coding
 - This URL can also be used directly to insert data into the database, which is functionally the same as manually inserting data into the MySQL database in XAMPP.  
 ![image](pic/XAMPP_19.png)  
 > [!CAUTION]
-> How to find your IP address?
+> How to find your IP address?  
 > Open your computer's CMD
 > Type the ipconfig command
 > ![image](pic/XAMPP_20.png)  
