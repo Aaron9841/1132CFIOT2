@@ -88,12 +88,25 @@ If you install successfully, open the XAMPP control panel, you should see this:
 ![image](pic/XAMPP_15.png)  
 OK, we finally finish database construct.  
 Next is Coding
-#### Coding
-- We using Websocket to upload data, that means we can add data to database by specific web address.
+#### Coding - XAMPP
+- We using Websocket to upload data, that means we can add data to database by specific URL.
 - At XAMPP side, we have two program, one is when ESP32 transmit data, there are a program to help insert data.
 > [!CAUTION]
 > We first need to create a folder under XAMPP’s htdocs directory to store our two program files.
 > In VS code, add a folder and two php file
-> Remember to include the .php extension when creating the two files, otherwise VS Code will not recognize the file type.
-- Another is we can use specical web address to check our database.
-- 
+> Remember to include the .php extension when creating the two files, otherwise VS Code will not recognize the file type.  
+> ![image](pic/XAMPP_16.png)  
+- In our uplaod program, please notice that your username, password, dbname are different with mine.
+- upload.php is responsible for receiving data from the ESP32 and inserting it into the database.  
+![image](pic/XAMPP_17.png)  
+- view.php allows us to view the contents of the dataset through a specific URL.
+![image](pic/XAMPP_18.png)  
+#### Coding - Arduino
+- The Arduino program is responsible for collecting temperature and humidity data and sending it to XAMPP's upload.php via a URL.
+- This URL can also be used directly to insert data into the database, which is functionally the same as manually inserting data into the MySQL database in XAMPP.  
+![image](pic/XAMPP_19.png)  
+> [!CAUTION]
+> How to find your IP address?
+> Open your computer's CMD
+> Type the ipconfig command
+> ![image](pic/XAMPP_20.png)  
