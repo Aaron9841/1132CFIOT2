@@ -20,7 +20,7 @@ Second, you need install some software to edit program:
 > XAMPP will suggest you don't install in C:\ or C:\Program Files(x86), just follow the instruction.
 ### Hardware wiring diagram
 By the code in Arduino, the pin have been setted.  
-![image](pic/hardware.drawio.png)  
+![image](pic/hardware.png)  
 ### Software setting
 #### Arduino
 We start from Arduino IDE:
