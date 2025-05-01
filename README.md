@@ -25,7 +25,8 @@ By the code in Arduino, the pin have been setted.
 #### Arduino
 We start from Arduino IDE:
 - Add ESP32 board
-![image](https://github.com/iiotntust/1132CFIOT/blob/9df78bd0296d513af6e96ff781f7df2f19e42dce/pic/pic1.jpg)  
+- https://dl.espressif.com/dl/package_esp32_index.json  
+![image](pic/pic1.jpg)  
 - Add library  
 ![image](pic/DHT_library.png)  
 - Select device  
