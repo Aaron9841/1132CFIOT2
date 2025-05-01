@@ -82,9 +82,9 @@ If you install successfully, open the XAMPP control panel, you should see this:
 > [!WARNING]
 > DO NOT USE UPPERCASE, the database would error.  
 
-![image](pic/XAMPP_11.png)  
-- Create the table, all the data will put in here and separate by name.  
 ![image](pic/XAMPP_13.png)  
+- Create the table, all the data will put in here and separate by name.  
+![image](pic/XAMPP_11.png)  
 - Here we can insert the data to test batabase are woring or not.
 ![image](pic/XAMPP_14.png)  
 - You also can see the data from here:  
