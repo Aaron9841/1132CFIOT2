@@ -42,7 +42,7 @@ And then we start to deal with XAMPP:
 - Webalizer: A program for recording and analyzing server logs.  
 If you install successfully, open the XAMPP control panel, you should see this:
 ![image](pic/XAMPP_2.png)  
-- To check XAMPP can work or not, you can tune on the Apache and MySQL:
+- To check XAMPP can work or not, you can tune on the Apache and MySQL:  
 ![image](pic/XAMPP_3.png)  
 - Click Admin under the Apache section in the control panel to check whether the default local web page can be accessed.
 ![image](pic/XAMPP_4.png)  
